@@ -1,0 +1,34 @@
+/*Splashscreen Styles*/
+.splash-bg {
+    background-color: #161616;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    animation: splash-bg 0.5s ease-in-out 1s 1 forwards;
+}
+.logo {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation: splash 0.5s ease-in-out 0.5s 1 forwards;
+}
+.splash {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+@keyframes splash {
+    0% { transform: scale(1); }
+    25% { transform: scale(0.95); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0); }
+}
+@keyframes splash-bg {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
